@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent child sub</title>
+    <script src="app/bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller/parent.js"></script>
+    <script src="controller/child.js"></script>
+    <script src="controller/sub.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div class="my_class">
+    <div ng-controller="parent">
+        {{parent}}
+        <div ng-controller="child">
+            {{child}}
+            <div ng-controller="sub">
+                {{sub}}
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
